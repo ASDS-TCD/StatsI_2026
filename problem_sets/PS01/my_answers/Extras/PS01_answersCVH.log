@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.7)  8 OCT 2026 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.10.7)  8 OCT 2026 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./PS01_CVH.tex
-(PS01_CVH.tex
+**./PS01_answersCVH.tex
+(PS01_answersCVH.tex
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
 (C:\Users\chane\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -848,7 +848,7 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 ex.def
 File: l3backend-pdftex.def 2026-09-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count362
-) (PS01_CVH.aux
+) (PS01_answersCVH.aux
 
 LaTeX Warning: Label `fig:correlation' multiply defined.
 
@@ -859,7 +859,7 @@ LaTeX Warning: Label `fig:correlation' multiply defined.
 LaTeX Warning: Label `fig:correlation' multiply defined.
 
 )
-\openout1 = `PS01_CVH.aux'.
+\openout1 = `PS01_answersCVH.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -919,9 +919,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package xypdf Info: Line width: 0.47998pt on input line 67.
 Package hyperref Info: Link coloring OFF on input line 67.
 
-(PS01_CVH.out) (PS01_CVH.out)
+(PS01_answersCVH.out) (PS01_answersCVH.out)
 \@outlinefile=\write7
-\openout7 = `PS01_CVH.out'.
+\openout7 = `PS01_answersCVH.out'.
 
 \c@lstlisting=\count369
 
@@ -937,7 +937,7 @@ File: lstlang3.sty 2025/11/14 1.11b listings language file
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 83.
 
-(PS01_CVH.R
+(PS01_answersCVH.R
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3
 6.
 
@@ -947,11 +947,12 @@ File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 36.
 )
-(PS01_CVH.R [1
+(PS01_answersCVH.R [1
 
-{C:/Users/chane/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (PS01_CVH.R
-) [2] (PS01_CVH.R) (PS01_CVH.R [3]) (PS01_CVH.R) (PS01_CVH.R
-[4]) (PS01_CVH.R) [5] [6]
+{C:/Users/chane/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (PS01_answe
+rsCVH.R) [2] (PS01_answersCVH.R) (PS01_answersCVH.R
+[3]) (PS01_answersCVH.R) (PS01_answersCVH.R [4]) (PS01_answersCVH.R) [5]
+[6]
 <PNG Files/Correlation_plot.png, id=162, 274.52562pt x 280.04625pt>
 File: PNG Files/Correlation_plot.png Graphic file (type png)
 <use PNG Files/Correlation_plot.png>
@@ -987,7 +988,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./PNG Files/Correlation_plot.png>] [8] [9 <./PNG Files/Boxplot_region.png>]
 [10 <./PNG Files/Relationship_y_x1.png>] [11 <./PNG Files/Relationship_y_x1_reg
-ion.png>] (PS01_CVH.aux)
+ion.png>] (PS01_answersCVH.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
@@ -996,17 +997,17 @@ L3 programming layer <2026-09-09>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `PS01_CVH.out' has not changed.
+Package rerunfilecheck Info: File `PS01_answersCVH.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  27681 strings out of 467392
- 489480 string characters out of 5405639
- 1280138 words of memory out of 5000000
+ 489767 string characters out of 5405639
+ 1280159 words of memory out of 5000000
  56413 multiletter control sequences out of 15000+600000
  636974 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 92i,10n,104p,3242b,2200s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 92i,10n,104p,3249b,2200s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\chane\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk> <C:\Users\chane\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1200.pk><C:/Users/chane/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -1022,7 +1023,7 @@ rs/chane/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 sy10.pfb><C:/Users/chane/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmti12.pfb><C:/Users/chane/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmtt12.pfb>
-Output written on PS01_CVH.pdf (11 pages, 227023 bytes).
+Output written on PS01_answersCVH.pdf (11 pages, 227238 bytes).
 PDF statistics:
  283 PDF objects out of 1000 (max. 8388607)
  136 named destinations out of 1000 (max. 500000)

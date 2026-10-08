@@ -80,7 +80,7 @@
 A school counselor was curious about the average of IQ of the students in her school and took a random sample of 25 students' IQ scores. The following is the data set:\\
 \vspace{.5cm}
 
-\lstinputlisting[language=R, firstline=36, lastline=36]{PS01_CVH.R}  
+\lstinputlisting[language=R, firstline=36, lastline=36]{PS01_answersCVH.R}  
 
 
 \vspace{1cm}
@@ -90,7 +90,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 (As a hint, you first need the mean and SD to create a CI.)
 
 The data is ratio (continuous), the sample size is 25 thus a small sample size with an unknown standard deviation. For this reason a $t$-distribution is appropriate. The sampling method is randomization, and the school counselor is interested in estimating the population mean which could be either higher or lower than the sample mean. For a 90\% confidence interval, the remaining 10\% is divided equally between the two tails, with 5\% in each tail.
-\lstinputlisting[language=R, firstline=39, lastline=56]{PS01_CVH.R}	
+\lstinputlisting[language=R, firstline=39, lastline=56]{PS01_answersCVH.R}	
 \[
 \begin{array}{c|c}
 	\text{lower} & \text{upper} \\
@@ -110,7 +110,7 @@ The assumptions above are still applicable except this is a right-tailed test. T
 	H_1 &: \mu > 100
 \end{aligned}
 \]
-	\lstinputlisting[language=R, firstline=60, lastline=64]{PS01_CVH.R}	
+	\lstinputlisting[language=R, firstline=60, lastline=64]{PS01_answersCVH.R}	
 If the p-value < 0.05, reject H0; otherwise, fail to reject H0. The p-value = 0.7215 thus at the 5\% significance level, there is insufficient evidence to conclude that the average student IQ is greater than 100. We fail to reject the H0.
 \end{enumerate}
 
@@ -134,29 +134,29 @@ If the p-value < 0.05, reject H0; otherwise, fail to reject H0. The p-value = 0.
 \vspace{.5cm}
 \noindent Explore the \texttt{expenditure} data set and import data into \texttt{R}.
 \vspace{.5cm}
-\lstinputlisting[language=R, firstline=42, lastline=42]{PS01_CVH.R}  
+\lstinputlisting[language=R, firstline=42, lastline=42]{PS01_answersCVH.R}  
 \vspace{.5cm}
 \begin{itemize}
 
 \item
 Please plot the relationships among \emph{Y}, \emph{X1}, \emph{X2}, and \emph{X3}? What are the correlations among them (you just need to describe the graph and the relationships among them)?
-	\lstinputlisting[language=R, firstline=77, lastline=112]{PS01_CVH.R}
+	\lstinputlisting[language=R, firstline=77, lastline=112]{PS01_answersCVH.R}
 \text The scatterplot (Figure 1) matrix shows upward-sloping patterns between all pairs of variables, consistent with their positive correlations. The correlation shows X1 has the strongest relationship with Y, followed by X3 and X2 (Table 1 and 2).
 	
 \vspace{.5cm}
 \item
 Please plot the relationship between \emph{Y} and \emph{Region}? On average, which region has the highest per capita expenditure on housing assistance?
-	\lstinputlisting[language=R, firstline=121, lastline=135]{PS01_CVH.R}
+	\lstinputlisting[language=R, firstline=121, lastline=135]{PS01_answersCVH.R}
 Figure 2 shows that the second boxplot (North Central) has the most outliers and the fourth boxplot (West) has the longest upper and lower whisker. The West (Region 4) has the highest average expenditure, with a average mean of 88.31 per capita. The North Central region (Region 2) has the second-highest average at 83.92, followed by the Northeast (Region 1) at 79.44. The South (Region 3) has the lowest average expenditure at 69.19 per capita (Table 3).
 	
 \vspace{.5cm}
 \item
 Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph and the relationship. Reproduce the above graph including one more variable \emph{Region} and display different regions with different types of symbols and colors.
-	\lstinputlisting[language=R, firstline=142, lastline=156]{PS01_CVH.R}
+	\lstinputlisting[language=R, firstline=142, lastline=156]{PS01_answersCVH.R}
 The scatterplot shows a moderate positive relationship between X1 and Y:as per-capita personal income (X1) increases, per-capita expenditure on housing assistance (Y) generally increases. The correlation between the two variables is 0.532, indicating a moderate positive linear association (Table 2). 
 
 The abline's formula is Y = 32.546 + 0.02458X\_1. Approximately 28.27\% of the variation in Y is explained by X1 using this linear regression model.
-\lstinputlisting[language=R, firstline=160, lastline=176]{PS01_CVH.R}
+\lstinputlisting[language=R, firstline=160, lastline=176]{PS01_answersCVH.R}
 There is a positive relationship, as per-capita personal income increases, housing-assistance expenditure generally tends to increase. This relationship is not very strong nor perfectly linear. Therefor income alone does not explain differences in housing-assistance expenditure and there are big differences (Figure 4).
 	
 \end{itemize}
