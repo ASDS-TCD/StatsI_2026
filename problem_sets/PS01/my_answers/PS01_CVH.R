@@ -45,7 +45,7 @@ alpha <- 1 - conf_level #confidence interval: 1 - 0.90 = 0.10
 df <- sample_size - 1 #the degrees of freedom is 24
 
 t_critical <- qt(1 - alpha / 2, df) # The sample size is 25 and the population standard deviation is unknown,so a t-test is appropriate.
-margin_of_error <- t_critical * sample_sd / sqrt(sample_size)
+margin_of_error <- t_critical * sample_sd / sqrt(sample_size) # The MOE is 4.480072
 
 confidence_interval <- c(
   lower = sample_mean - margin_of_error,
@@ -57,9 +57,8 @@ t.test(y, conf.level = 0.90) # Check using R's built-in function
 # The 90% confidence interval is 93.96 to 102.92, thus we are 90% confident that the population mean IQ of students at the school is between the lower and upper limits of the confidence interval.
 
 #1.2. The counselor wants to know if the school’s average IQ is above 100.
-# IQ needs to be greater, thus alternative needs to be greater.
 iq_test <- t.test(y, mu = 100, alternative = "greater", conf.level = 0.95)
-iq_test
+iq_test# IQ needs to be greater, thus alternative needs to be greater.
 ifelse(iq_test$p.value < 0.05,
        "We reject H0",
        "We fail to reject H0")
@@ -175,4 +174,3 @@ legend("topright",
        xpd = TRUE)
 
 par(xpd = NA)
-

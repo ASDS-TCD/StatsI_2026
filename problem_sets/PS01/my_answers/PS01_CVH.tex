@@ -86,14 +86,32 @@ A school counselor was curious about the average of IQ of the students in her sc
 \vspace{1cm}
 
 \begin{enumerate}
-	\item Find a 90\% confidence interval for the average student IQ in the school (As a hint, you first need the mean and SD to create a CI):\\
+\item Find a 90\% confidence interval for the average student IQ in the school. 
+(As a hint, you first need the mean and SD to create a CI.)
+
+The data is ratio (continuous), the sample size is 25 thus a small sample size with an unknown standard deviation. For this reason a $t$-distribution is appropriate. The sampling method is randomization, and the school counselor is interested in estimating the population mean which could be either higher or lower than the sample mean. For a 90\% confidence interval, the remaining 10\% is divided equally between the two tails, with 5\% in each tail.
 \lstinputlisting[language=R, firstline=39, lastline=56]{PS01_CVH.R}	
-\text The 90\% confidence interval is 93.96 to 102.92, thus we are 90\% confident that the population mean IQ of students at the school is between the lower and upper limits of the confidence interval.
+\[
+\begin{array}{c|c}
+	\text{lower} & \text{upper} \\
+	\hline
+	93.96 & 102.92
+\end{array}
+\]
+The 90\% confidence interval is 93.96 to 102.92, thus we are 90\% confident that the population mean IQ of students at the school is between the lower and upper limits of the confidence interval.
 
 	\item Next, the school counselor was curious  whether  the average student IQ in her school is higher than the average IQ score (100) among all the schools in the country.\\ 
-	
 	\noindent Using the same sample, conduct the appropriate hypothesis test with $\alpha=0.05$.
-	\lstinputlisting[language=R, firstline=60, lastline=66]{PS01_CVH.R}	
+
+The assumptions above are still applicable except this is a right-tailed test. The Null Hypothesis is that average IQ in the school is less than or equal to the national average. The Alternative Hypothesis is that the average IQ in the school is higher than the national average.
+\[
+\begin{aligned}
+	H_0 &: \mu \leq 100 \\
+	H_1 &: \mu > 100
+\end{aligned}
+\]
+	\lstinputlisting[language=R, firstline=60, lastline=64]{PS01_CVH.R}	
+If the p-value < 0.05, reject H0; otherwise, fail to reject H0. The p-value = 0.7215 thus at the 5\% significance level, there is insufficient evidence to conclude that the average student IQ is greater than 100. We fail to reject the H0.
 \end{enumerate}
 
 \newpage
@@ -122,16 +140,106 @@ A school counselor was curious about the average of IQ of the students in her sc
 
 \item
 Please plot the relationships among \emph{Y}, \emph{X1}, \emph{X2}, and \emph{X3}? What are the correlations among them (you just need to describe the graph and the relationships among them)?
-	\lstinputlisting[language=R, firstline=78, lastline=116]{PS01_CVH.R}	
+	\lstinputlisting[language=R, firstline=77, lastline=112]{PS01_CVH.R}
+\text The scatterplot (Figure 1) matrix shows upward-sloping patterns between all pairs of variables, consistent with their positive correlations. The correlation shows X1 has the strongest relationship with Y, followed by X3 and X2 (Table 1 and 2).
+	
 \vspace{.5cm}
 \item
 Please plot the relationship between \emph{Y} and \emph{Region}? On average, which region has the highest per capita expenditure on housing assistance?
-	\lstinputlisting[language=R, firstline=121, lastline=138]{PS01_CVH.R}
+	\lstinputlisting[language=R, firstline=121, lastline=135]{PS01_CVH.R}
+Figure 2 shows that the second boxplot (North Central) has the most outliers and the fourth boxplot (West) has the longest upper and lower whisker. The West (Region 4) has the highest average expenditure, with a average mean of 88.31 per capita. The North Central region (Region 2) has the second-highest average at 83.92, followed by the Northeast (Region 1) at 79.44. The South (Region 3) has the lowest average expenditure at 69.19 per capita (Table 3).
+	
 \vspace{.5cm}
 \item
 Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph and the relationship. Reproduce the above graph including one more variable \emph{Region} and display different regions with different types of symbols and colors.
-	\lstinputlisting[language=R, firstline=142, lastline=178]{PS01_CVH.R}
+	\lstinputlisting[language=R, firstline=142, lastline=156]{PS01_CVH.R}
+The scatterplot shows a moderate positive relationship between X1 and Y:as per-capita personal income (X1) increases, per-capita expenditure on housing assistance (Y) generally increases. The correlation between the two variables is 0.532, indicating a moderate positive linear association (Table 2). 
+
+The abline's formula is Y = 32.546 + 0.02458X\_1. Approximately 28.27\% of the variation in Y is explained by X1 using this linear regression model.
+\lstinputlisting[language=R, firstline=160, lastline=176]{PS01_CVH.R}
+There is a positive relationship, as per-capita personal income increases, housing-assistance expenditure generally tends to increase. This relationship is not very strong nor perfectly linear. Therefor income alone does not explain differences in housing-assistance expenditure and there are big differences (Figure 4).
+	
 \end{itemize}
+\newpage
+\begin{center}
+	\Large\textbf{Bibliography}
+\end{center}
+
+\noindent Statistics Resources: Correlation. (2026, September 29). Retrieved from National University: \url{https://resources.nu.edu/statsresources/correlation}
+```
+\newpage
+	\section*{Figures and Tables}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{PNG Files/Correlation_plot.png}
+	\caption{Correlation Matrix of Y, X1, X2, and X3}
+	\label{fig:correlation}
+\end{figure}
+\begin{table}[htbp]
+	\centering
+	\caption{Correlation Matrix of the Dependent and Independent Variables}
+	\label{tab:correlation_matrix}
+	\[
+	\begin{array}{c|rrrr}
+		& Y & X_1 & X_2 & X_3 \\ \hline
+		Y   & \text{NA} & 0.5317 & 0.4483 & 0.4637 \\
+		X_1 & 0.5317 & \text{NA} & 0.2056 & 0.5953 \\
+		X_2 & 0.4483 & 0.2056 & \text{NA} & 0.2210 \\
+		X_3 & 0.4637 & 0.5953 & 0.2210 & \text{NA}
+	\end{array}
+	\]
+\end{table}
+\vspace{2cm}
+\begin{table}[htbp]
+	\centering
+	\caption{Classification of Correlation Strengths}
+	\label{tab:correlation_strength}
+	\[
+	\begin{array}{c|c|c|c|c}
+		& Y & X_1 & X_2 & X_3 \\ \hline
+		Y   & \text{NA} & \text{Moderate Positive} & \text{Moderate Positive} & \text{Moderate Positive} \\
+		X_1 & \text{Moderate Positive} & \text{NA} & \text{Weak Positive} & \text{Moderate Positive} \\
+		X_2 & \text{Moderate Positive} & \text{Weak Positive} & \text{NA} & \text{Weak Positive} \\
+		X_3 & \text{Moderate Positive} & \text{Moderate Positive} & \text{Weak Positive} & \text{NA}
+	\end{array}
+	\]
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{PNG Files/Boxplot_region.png}
+	\caption{Average Per Capita Expenditure on Housing Assistance by Region}
+	\label{fig:correlation}
+\end{figure}
+
+\begin{table}[htbp]
+	\centering
+	\caption{Mean Per-Capita Expenditure on Shelters and Housing Assistance by Region}
+	\label{tab:expenditure_by_region}
+	\[
+	\begin{array}{c|c}
+		\text{Region} & \text{Mean } Y \\ \hline
+		\text{Northeast} & 79.44444 \\
+		\text{North Central} & 83.91667 \\
+		\text{South} & 69.18750 \\
+		\text{West} & 88.30769
+	\end{array}
+	\]
+\end{table}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{PNG Files/Relationship_y_x1.png}
+	\caption{Scatter-plot of Y and X1}
+	\label{fig:correlation}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{PNG Files/Relationship_y_x1_region.png}
+	\caption{Scatter-plot of Y and X1 by Region}
+	\label{fig:correlation}
+\end{figure}
 
 
 \end{document}
