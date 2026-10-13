@@ -97,10 +97,10 @@
 \begin{enumerate}
 	
 	\item [(a)]
-	Calculate the $\chi^2$ test statistic by hand/manually (even better if you can do "by hand" in \texttt{R}).\\
+	Calculate the $\chi^2$ test statistic by hand/manually (even better if you can do "by hand" in \texttt{R}).\\ 
 		\lstinputlisting[language=R, firstline=40, lastline=77]{PS02_answers_OS.R} 
 	
-	The expected frequency for each cell is:
+	The expected frequency for each cell is: 	\vspace{0.5cm}
 	
 	\textit{(row total / grand total) * column total}
 	
@@ -117,20 +117,22 @@ I calculated the expected frequencies "by hand" in R (above). A table of expecte
 	\end{tabular}
 \end{table}
 	
+		\vspace{0.5cm}
 	\item [(b)]
 	Now calculate the p-value from the test statistic you just created (in \texttt{R}).\footnote{Remember frequency should be $>$ 5 for all cells, but let's calculate the p-value here anyway.}  What do you conclude if $\alpha = 0.1$?\\
 	\lstinputlisting[language=R, firstline=78, lastline=113]{PS02_answers_OS.R} 
 	
-	The degrees of freedom for this chi-square test are:
+	The degrees of freedom for this chi-square test are: 	\vspace{0.5cm}
 	
-	\textit{df = (rows-1)(columns-1) = 1*2 =2}
+	\textit{df = (rows-1)(columns-1) = 1*2 =2} 	\vspace{0.5cm}
 	
-	Using the \textit{pchisq()} function in R, the chi-square statistic calculated earlier, and \textit{df = 2}, the P-value is approximately 0.15.
+	Using the \textit{pchisq()} function in R, the chi-square statistic calculated earlier, and \textit{df = 2}, the P-value is approximately 0.15. \vspace{0.5cm}
 	
-	Our hypotheses are:
+	Our hypotheses are: \vspace{0.5cm}
 	
 	$H_0$: The socioeconomic class of the driver and whether the officer solicits a bribe from the driver are statistically independent.
-	$H_a$: The socioeconomic class of the driver and whether the officer solicits a bribe from the driver are statistically dependent. 
+	
+	$H_a$: The socioeconomic class of the driver and whether the officer solicits a bribe from the driver are statistically dependent. \vspace{0.5cm}
 	
 	At the $alpha$ = 0.1 level, the P-value is greater than $alpha$. We \textbf{fail to reject the null hypothesis} that the socioeconomic class of the driver and whether the officer solicits a bribe from the driver are statistically independent.
 	
@@ -150,17 +152,19 @@ I calculated the expected frequencies "by hand" in R (above). A table of expecte
 		\end{tabular}
 	\end{table}
 	
-\lstinputlisting[language=R, firstline=114, lastline=146]{PS02_answers_OS.R} 
+\lstinputlisting[language=R, firstline=114, lastline=146]{PS02_answers_OS.R}  \vspace{0.5cm}
 
-The standardized residual for each cell is equal to the difference in the observed and expected frequency divided by the product of the expected frequency, (1 - the row proportion), and (1 - the column proportion). That is:
+The standardized residual for each cell is equal to the difference in the observed and expected frequency divided by the product of the expected frequency, (1 - the row proportion), and (1 - the column proportion). That is: \vspace{0.5cm}
 
-\textit{z} = ($f_o$ - $f_e$) / $\sqrt{f_e(1 - proportion_r)(1 - proportion_c)}$
+\textit{z} = ($f_o$ - $f_e$) / $\sqrt{f_e(1 - proportion_r)(1 - proportion_c)}$ \vspace{0.5cm}
 
-I used the above formula manually in R and placed the results in the table above. I checked my work by calling the \textit{chisq.test()} function in R and returning the standardized residuals. The returned values were equal or approximately equal to the values I calculated by hand. Any discrepancies in the results can likely be attributed to rounding. 
+I used the above formula manually in R and placed the results in the table above. I checked my work by calling the \textit{chisq.test()} function in R and returning the standardized residuals. The returned values were equal or approximately equal to the values I calculated by hand. Any discrepancies in the results can likely be attributed to rounding. \vspace{0.5cm}
 
-	\item [(d)] How might the standardized residuals help you interpret the results?  
+	\item [(d)] How might the standardized residuals help you interpret the results?  \vspace{0.5cm}
 	
-	The standardized residuals measure the strength of each cells's contribution to the chi-square statistic (calculated earlier). Just as z-scores provide an indication of how far from the mean a given observed value of a continuous variable is, standardized residuals provide an indication of how far a categorical variable's observed frequency is from its expected frequency. If the chi-square test provided statistically significant evidence to reject the null hypothesis that the variables are statistically independent (it did not provide any such evidence in this case), the standardized residuals would indicate which cells in the contingency table (i.e., which class of driver and whether the officer requested a bribe) were driving the two variables' statistically dependent relationship. 
+	The standardized residuals measure the strength of each cells's contribution to the chi-square statistic (calculated earlier). Just as z-scores provide an indication of how far from the mean a given observed value of a continuous variable is, standardized residuals provide an indication of how far a categorical variable's observed frequency is from its expected frequency.
+	
+	If the chi-square test provided statistically significant evidence to reject the null hypothesis that the variables are statistically independent (it did not provide any such evidence in this case), the standardized residuals would indicate which cells in the contingency table (i.e., which class of driver and whether the officer requested a bribe) were driving the two variables' statistically dependent relationship. 
 	
 	In this case, both upper and lower class drivers who had officers request a bribe had the greatest discrepancies between the expected frequency of bribe requests and the observed frequencies. Lower class drivers had bribes requested more than expected, while upper class drivers had bribes requested less than expected. 
 	
@@ -201,11 +205,11 @@ $H_a$: $\beta_1$ $\neq$ 0 On average, after adopting the  reservation policy (i.
 	
 	Once the data has been cleaned up, I call the \textit{lm()} function to regress the response variable \textit{water} on the explanatory variable \textit{reserved}.
 	
-	The \textit{lm()} function provides the following output:
+	The \textit{lm()} function provides the following output: \vspace{0.5cm}
 	
-	$\hat{\beta}_0$ = 14.738 
+	$\hat{\beta}_0$ (intercept) = 14.738 
 	
-	$\hat{\beta}_1$ = 9.252
+	$\hat{\beta}_1$ (slope) = 9.252
 	
 	\textit{se($\hat{\beta}_0$)} = 2.286
 	
@@ -213,11 +217,27 @@ $H_a$: $\beta_1$ $\neq$ 0 On average, after adopting the  reservation policy (i.
 	
 	\textit{t} = 2.344
 	
-	\textit{P}-value = 0.0197
+	\textit{P}-value = 0.0197 \vspace{0.5cm}
 	
+	Using the $\hat{\beta}_0$ and $\hat{\beta}_1$ values above, the regression equation is: \vspace{0.5cm}
+	
+\textbf{	$\hat{water}$ = 14.738  +  9.252(\textit{reserved}) + $\epsilon$}
+
+ \vspace{0.5cm}
+A scatterplot of the cleaned-up data including this regression line is below, preceded by the R code used to generate the plot:
+ 
+ 	\lstinputlisting[language=R, firstline=229, lastline=243]{PS02_answers_OS.R}
+	\includegraphics[scale=0.9]{scatterplot}
+
+In checking the model assumptions, I created a residual plot in R (below, preceded by code). The residuals appear to have a heteroskedastic distribution, with the residual values for villages that have adopted the reservation policy exhibiting greater variance than those that have not adopted the reservation policy. This violates the "constant variance of error" asssumption of linear regression. A different model may be better suited for analysing this data. 
+
+ 	\lstinputlisting[language=R, firstline=245, lastline=250]{PS02_answers_OS.R}
+
+	\includegraphics[scale=1]{residualplot}
 	
 	\vspace{1cm}
-	\item [(c)] Interpret the coefficient estimate for reservation policy. 
+	\item [(c)] Interpret the coefficient estimate for reservation policy.  	\vspace{0.5cm}
+
 
 The slope coefficient estimate $\hat{\beta}_1$ = 9.252 can be interpreted as meaning that by this model, on average, a village adopting the reservation policy (that is, going from "reserved = 0" to "reserved = 1"), would be expected to build or repair approximately 9 drinking water facilities. 
 	

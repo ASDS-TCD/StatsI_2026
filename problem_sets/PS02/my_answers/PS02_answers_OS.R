@@ -221,4 +221,30 @@ summary(lm_model)
 # number of new or repaired drinking water facilities in a village. The slope
 # of the linear regression line is statistically different from zero.
 
-##################### END OF PROBLEM SET #####################
+#####################
+# RESIDUAL PLOT, ETC
+#####################
+
+#plot:
+library(ggplot2)
+
+ggplot(df_not_tidy, aes(x = reserved, y = water)) +
+  geom_point() +
+  labs(title = "Number of new or repaired water facilities in West Bengal 
+       villages that have and have not reserved council seats for women", 
+       x = "Reservation policy status (0=policy not adopted; 1=policy adopted", 
+       y = "Number of new or repaired water facilities in village") +
+  geom_smooth(
+    aes(x = reserved, y = water),
+    method = "lm",
+    formula = y ~ x,
+    color = "red",
+    se = FALSE) 
+
+#residual plot:
+model_res <- resid(lm_model)
+plot(df_not_tidy$reserved, model_res, 
+     ylab = "Residual values",
+     xlab = "Reservation policy status (0=policy not adopted, 1=adopted)",
+     main = "Residual plot")
+abline(0,0)

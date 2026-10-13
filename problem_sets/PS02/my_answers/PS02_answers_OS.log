@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 OCT 2026 13:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 OCT 2026 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,22 +914,39 @@ File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 47.
 ) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
 (./PS02_answers_OS.R [3]) [4] (./PS02_answers_OS.R) [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 <duflo.png, id=164, 1093.08376pt x 576.1525pt>
 File: duflo.png Graphic file (type png)
 <use duflo.png>
-Package pdftex.def Info: duflo.png  used on input line 180.
+Package pdftex.def Info: duflo.png  used on input line 184.
 (pdftex.def)             Requested size: 437.22575pt x 230.45691pt.
-[7 <./duflo.png>] (./PS02_answers_OS.R) (./PS02_answers_OS.R) [8] [9]
-(./PS02_answers_OS.aux)
+[7 <./duflo.png>] (./PS02_answers_OS.R) (./PS02_answers_OS.R) [8]
+(./PS02_answers_OS.R)
+<scatterplot.pdf, id=202, 482.80376pt x 402.50375pt>
+File: scatterplot.pdf Graphic file (type pdf)
+<use scatterplot.pdf>
+Package pdftex.def Info: scatterplot.pdf  used on input line 230.
+(pdftex.def)             Requested size: 434.51936pt x 362.25002pt.
+ [9] (./PS02_answers_OS.R)
+<residualplot.pdf, id=223, 482.80376pt x 402.50375pt>
+File: residualplot.pdf Graphic file (type pdf)
+<use residualplot.pdf>
+Package pdftex.def Info: residualplot.pdf  used on input line 236.
+(pdftex.def)             Requested size: 482.80258pt x 402.50276pt.
+
+Overfull \hbox (42.42226pt too wide) in paragraph at lines 236--237
+[][] 
+ []
+
+[10 <./scatterplot.pdf>] [11 <./residualplot.pdf>] (./PS02_answers_OS.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -938,34 +955,35 @@ Package rerunfilecheck Info: File `PS02_answers_OS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27408 strings out of 467525
- 476187 string characters out of 5418982
- 1350594 words of memory out of 5000000
- 55687 multiletter control sequences out of 15000+600000
- 639805 words of font info for 90 fonts, out of 8000000 for 9000
+ 27471 strings out of 467525
+ 477161 string characters out of 5418982
+ 1350596 words of memory out of 5000000
+ 55721 multiletter control sequences out of 15000+600000
+ 640164 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,104p,3247b,2213s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
-26/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/202
-6/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/
-texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS02_answers_OS.pdf (9 pages, 1061013 bytes).
+></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
+e/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
+026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
+26/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on PS02_answers_OS.pdf (11 pages, 1095869 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 145 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 364 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
