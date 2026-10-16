@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  13 OCT 2026 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  16 OCT 2026 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,14 +939,21 @@ Package pdftex.def Info: scatterplot.pdf  used on input line 230.
 <residualplot.pdf, id=223, 482.80376pt x 402.50375pt>
 File: residualplot.pdf Graphic file (type pdf)
 <use residualplot.pdf>
-Package pdftex.def Info: residualplot.pdf  used on input line 236.
+Package pdftex.def Info: residualplot.pdf  used on input line 238.
 (pdftex.def)             Requested size: 482.80258pt x 402.50276pt.
 
-Overfull \hbox (42.42226pt too wide) in paragraph at lines 236--237
-[][] 
+Overfull \hbox (42.42226pt too wide) in paragraph at lines 238--239
+[][]
  []
 
-[10 <./scatterplot.pdf>] [11 <./residualplot.pdf>] (./PS02_answers_OS.aux)
+[10 <./scatterplot.pdf>] (./PS02_answers_OS.R)
+<residualdensity.pdf, id=240, 531.9875pt x 402.50375pt>
+File: residualdensity.pdf Graphic file (type pdf)
+<use residualdensity.pdf>
+Package pdftex.def Info: residualdensity.pdf  used on input line 244.
+(pdftex.def)             Requested size: 425.59058pt x 322.00343pt.
+ [11 <./residualplot.pdf>]
+[12 <./residualdensity.pdf>] (./PS02_answers_OS.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -955,10 +962,10 @@ Package rerunfilecheck Info: File `PS02_answers_OS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27471 strings out of 467525
- 477161 string characters out of 5418982
+ 27495 strings out of 467525
+ 477588 string characters out of 5418982
  1350596 words of memory out of 5000000
- 55721 multiletter control sequences out of 15000+600000
+ 55734 multiletter control sequences out of 15000+600000
  640164 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,104p,3247b,2213s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -980,10 +987,10 @@ e/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 26/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026
 /texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS02_answers_OS.pdf (11 pages, 1095869 bytes).
+Output written on PS02_answers_OS.pdf (12 pages, 1104190 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 169 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 178 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -229,11 +229,21 @@ A scatterplot of the cleaned-up data including this regression line is below, pr
  	\lstinputlisting[language=R, firstline=229, lastline=243]{PS02_answers_OS.R}
 	\includegraphics[scale=0.9]{scatterplot}
 
-In checking the model assumptions, I created a residual plot in R (below, preceded by code). The residuals appear to have a heteroskedastic distribution, with the residual values for villages that have adopted the reservation policy exhibiting greater variance than those that have not adopted the reservation policy. This violates the "constant variance of error" asssumption of linear regression. A different model may be better suited for analysing this data. 
+We assume that population means of our response variable \textit{water} have a linear relationship with our explanatory variable \textit{reserved}. We also assume that population values of \textit{water} follow a normal distribution for both villages that have adopted the reservation policy and those that have not. 
+
+However, the constant variance assumption for regression is not satisfied. In checking the model assumptions, I created a residual plot in R (below, preceded by code). The residuals appear to have a heteroskedastic distribution, with the residual values for villages that have adopted the reservation policy exhibiting greater variance than those that have not adopted the reservation policy. 
 
  	\lstinputlisting[language=R, firstline=245, lastline=250]{PS02_answers_OS.R}
 
-	\includegraphics[scale=1]{residualplot}
+	\includegraphics[scale=1]{residualplot} \vspace{0.25cm}
+	
+A plot of the density of the residuals, created using the code below, confirms this suspicion.  The "constant variance of error" asssumption of linear regression is violated. 
+
+\lstinputlisting[language=R, firstline=252, lastline=258]{PS02_answers_OS.R}
+
+\includegraphics[scale=0.8]{residualdensity}
+
+The errors are not normally distributed. A different model may be better suited for analysing this data.
 	
 	\vspace{1cm}
 	\item [(c)] Interpret the coefficient estimate for reservation policy.  	\vspace{0.5cm}

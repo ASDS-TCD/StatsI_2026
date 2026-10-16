@@ -248,3 +248,11 @@ plot(df_not_tidy$reserved, model_res,
      xlab = "Reservation policy status (0=policy not adopted, 1=adopted)",
      main = "Residual plot")
 abline(0,0)
+
+#residual density plot:
+preds <- predict(lm_model)
+plot(density(df_not_tidy$water-preds),
+     main = "Density of residuals",
+     ylab = "New or repaired water facilities",
+     xlab = "Reservation policy status (0=not adopted; 1=adopted)",
+     cex.axis = 1, cex.lab = 1.2, cex.main = 1.5, lwd =2)
